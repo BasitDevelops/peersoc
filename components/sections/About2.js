@@ -106,34 +106,6 @@ export default function About2() {
             </div>
           </div>
         </div>
-        {/* <div className="about-shape-wrap">
-          <ul className="list-wrap">
-            <li>
-              <img
-                src="/assets/img/images/about_shape01.png"
-                className="layer"
-                data-depth="0.3"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="/assets/img/images/about_shape02.png"
-                className="layer"
-                data-depth="0.3"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="/assets/img/images/about_shape03.png"
-                className="layer"
-                data-depth="0.2"
-                alt=""
-              />
-            </li>
-          </ul>
-        </div> */}
       </section>
     </>
   );

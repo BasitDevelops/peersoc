@@ -35,10 +35,10 @@ export default function Home4() {
           <Counter4 />
           <Appointment3 />
         </div> */}
-        {/* <AdditionalContent/> */}
-        <Support1 />
+        <AdditionalContent/>
+        {/* <Support1 /> */}
         <Testimonial3 />
-        <Blog1 />
+        {/* <Blog1 /> */}
         <Newsletter1 />
       </Layout>
     </>
