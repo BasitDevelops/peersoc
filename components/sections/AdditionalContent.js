@@ -1,14 +1,40 @@
 import Link from "next/link";
 
-export default function About2() {
+const AdditionalContent = () => {
+  const additionalContent = [
+    {
+      img: "https://images.unsplash.com/photo-1581091012184-7abdb06c0f5b",
+      title: "24/7 Security Monitoring",
+      desc: "Our SOC provides around-the-clock surveillance to detect, analyze, and respond to threats before they escalate.",
+    },
+    {
+      img: "https://images.unsplash.com/photo-1614064641938-3bbee52942c3",
+      title: "Incident Response",
+      desc: "Minimize damage with fast, coordinated responses to security incidents, guided by expert analysts and automation.",
+    },
+    {
+      img: "https://images.unsplash.com/photo-1611944212129-29977ae13998",
+      title: "Threat Intelligence",
+      desc: "Harness real-time threat intelligence and behavioral analytics to stay ahead of cybercriminals and evolving attack methods.",
+    },
+  ];
   return (
     <>
       <section
-        className="about-area-two parallax about-bg"
-        data-background="/assets/img/bg/about_bg.jpg"
+        className="about-area-two parallax about-bg additional-content"
+        // data-background="/assets/img/bg/about_bg.jpg"
       >
-        <div className="container">
-          <div className="row align-items-center">
+        {additionalContent?.map((content, index) => (
+          <div key={index} className="content">
+            <div>
+              <h1>{content?.title}</h1>
+              <p>{content?.desc}</p>
+            </div>
+            <img src={content?.img} alt={content?.title} />
+          </div>
+        ))}
+        <div className="content">
+          {/* <div className="row align-items-center">
             <div className="col-lg-6 order-0 order-lg-2">
               <div className="about-img-wrap-two">
                 <ul className="list-wrap">
@@ -104,37 +130,11 @@ export default function About2() {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
-        {/* <div className="about-shape-wrap">
-          <ul className="list-wrap">
-            <li>
-              <img
-                src="/assets/img/images/about_shape01.png"
-                className="layer"
-                data-depth="0.3"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="/assets/img/images/about_shape02.png"
-                className="layer"
-                data-depth="0.3"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="/assets/img/images/about_shape03.png"
-                className="layer"
-                data-depth="0.2"
-                alt=""
-              />
-            </li>
-          </ul>
-        </div> */}
       </section>
     </>
   );
-}
+};
+
+export default AdditionalContent;

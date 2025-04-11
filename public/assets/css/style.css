@@ -818,6 +818,7 @@ label {
   font-size: 14px;
   font-weight: 600;
   color: #222222;
+  text-align: left;
 }
 .services-dropdown-menu .first-container > button > div > i {
   color: var(--vividcrimson);
@@ -1992,9 +1993,15 @@ label {
 /* START */
 .features-container {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 .features-container > div {
-  height: max-content;
+  width: 400px;
+}
+.features-container > div > div > a > img {
+  object-fit: cover;
 }
 /* STOP */
 
@@ -2128,7 +2135,7 @@ label {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  background: rgb(254 93 20 / 16%);
+  background: rgba(177, 2, 19, 0.16);
   font-size: 30px;
   color: var(--tg-primary-color);
   margin-right: 15px;
@@ -2222,7 +2229,7 @@ label {
 	11. Services
 ===============================*/
 .services-area {
-  background: var(--tg-gray);
+  background: rgba(12, 18, 57, 0.92);
   padding: 115px 0 90px;
 }
 .services-item {
@@ -2263,7 +2270,7 @@ label {
   z-index: -1;
   background: linear-gradient(
     100.16deg,
-    #fe5d14 1.96%,
+    var(--vividcrimson) 1.96%,
     rgba(28, 28, 28, 0) 198.08%
   );
   opacity: 0;
@@ -2282,7 +2289,7 @@ label {
   color: var(--tg-white);
   font-size: 40px;
   border-radius: 50px;
-  box-shadow: 0px 0px 30px rgba(254, 93, 20, 0.4);
+  box-shadow: 0px 0px 30px hsla(354, 98%, 35%, 0.4);
   margin-bottom: 55px;
 }
 .services-content .title {
@@ -2354,6 +2361,22 @@ label {
 .services-overlay-content {
   display: none;
 }
+
+/* START */
+.services-area .container .section-title .title {
+  color: white;
+}
+
+.services-area .container .services-item-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.services-area .container .services-item-container .services-item {
+  width: 400px;
+}
+/* STOP */
 
 /* services-two */
 .services-item-two {
@@ -5837,3 +5860,6 @@ label {
     transform: scale(1, 0);
   }
 }
+/* START ADDITIONAL CONTENT */
+
+/* STOP ADDITIONAL CONTENT */

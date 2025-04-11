@@ -75,6 +75,100 @@ const menuItems = [
   { label: "Contact Us", href: "/contact", hasChildren: false },
 ];
 
+// const menuItems = [
+//   { label: "About Us", href: "/about", hasChildren: false },
+//   {
+//     label: "Invisense",
+//     href: "/invisense",
+//     hasChildren: true,
+//     children: [
+//       {
+//         icon: <GrTechnology />,
+//         label: "Invisense",
+//         href: "/invisense",
+//         desc: "Seamless, invisible technology enhancing environments without disrupting aesthetics or function",
+//         links: [
+//           { label: "Invisense XDR", href: "/invisense-XDR" },
+//           { label: "Invisense XDR+", href: "/invisense-XDR+" },
+//           { label: "Invisense OXDR", href: "/invisense-OXDR" },
+//           { label: "Invisense GSOS", href: "/invisense-GSOS" },
+//           { label: "Invisense MDR", href: "/invisense-MDR" },
+//           { label: "Invisense MDR+", href: "/invisense-MDR+" },
+//           { label: "Invisense OMDR", href: "/invisense-OMDR" },
+//         ],
+//       },
+//       {
+//         icon: <MdOutlineSecurity />,
+//         label: "Managed security services on AWS",
+//         href: "/managed-security-services-on-AWS",
+//         desc: "Managed security services on AWS offer continuous monitoring, threat detection, and compliance using native tools—protecting workloads, ensuring data integrity, and minimizing risks so businesses can focus on growth.",
+//       },
+//       {
+//         icon: <MdOutlineCloud />,
+//         label: "Invinsense Cloud",
+//         href: "/invisense-cloud",
+//         desc: "Invinsense Cloud is a secure, scalable platform that simplifies deployment, management, and growth of applications—powered by automation, built-in security, and high-performance infrastructure for modern digital experiences.",
+//       },
+//       {
+//         icon: <LiaIndustrySolid />,
+//         label: "Invinsense OT",
+//         href: "/invisense-OT",
+//         desc: "Invinsense OT secures industrial systems with real-time visibility, threat detection, and compliance—ensuring safety, reliability, and resilience across operational technology environments in manufacturing, energy, and critical infrastructure.",
+//       },
+//     ],
+//   },
+//   {
+//     label: "Services",
+//     href: "/services",
+//     hasChildren: true,
+//     children: [
+//       {
+//         id: "siem",
+//         icon: <GrTechnology />,
+//         label: "Security Information & Event Management - SIEM",
+//         href: "#",
+//       },
+//       {
+//         id: "idam",
+//         icon: <GrTechnology />,
+//         label: "Identity Access Management - IDAM",
+//         href: "#",
+//       },
+//       {
+//         id: "dra",
+//         icon: <GrTechnology />,
+//         label: "Disaster Recovery Automation - DRA",
+//         href: "#",
+//       },
+//       {
+//         id: "soar",
+//         icon: <GrTechnology />,
+//         label: "Security Orchestration Automation & Response - SOAR",
+//         href: "#",
+//       },
+//       {
+//         id: "mtd",
+//         icon: <GrTechnology />,
+//         label: "Moving Target Defence - MTD",
+//         href: "#",
+//       },
+//       {
+//         id: "dt",
+//         icon: <GrTechnology />,
+//         label: "Deception Technology - DT",
+//         href: "#",
+//       },
+//       {
+//         id: "edr",
+//         icon: <GrTechnology />,
+//         label: "Endpoint Detection and Response - EDR",
+//         href: "#",
+//       },
+//     ],
+//   },
+//   { label: "Contact Us", href: "/contact", hasChildren: false },
+// ];
+
 export default function Header({ headerCls, headerTop }) {
   const [scroll, setScroll] = useState(0);
 
@@ -107,7 +201,7 @@ export default function Header({ headerCls, headerTop }) {
   const handleServiceSubMenu = (value) => {
     setActiveServiceSubMenuId(value);
     const subMenu = servicesMenuData.find(
-      (serviceDetails) => serviceDetails?.id === activeServiceSubMenuId
+      (serviceDetails) => serviceDetails?.id === value
     );
     setActiveServiceSubMenu(subMenu);
   };
