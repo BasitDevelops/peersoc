@@ -350,14 +350,13 @@ export default function Header({ headerCls, headerTop }) {
                                 )
                               }
                             >
-                              <Link
-                                href={
-                                  !menuItem?.hasChildren ? menuItem?.href : ""
-                                }
-                                role={menuItem?.hasChildren && "button"}
-                              >
-                                {menuItem?.label}
-                              </Link>
+                              {!menuItem?.hasChildren ? (
+                                <Link href={menuItem?.href}>
+                                  {menuItem?.label}
+                                </Link>
+                              ) : (
+                                <button>{menuItem?.label}</button>
+                              )}
                               <i>{menuItem?.hasChildren && <FaAngleDown />}</i>
                             </li>
                             {menuItem?.hasChildren &&

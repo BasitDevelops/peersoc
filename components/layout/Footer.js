@@ -118,6 +118,22 @@ export default function Footer1() {
                             />
                           </Link>
                         </li>
+                        <li>
+                          <Link href="/#">
+                            <img
+                              src="https://images.unsplash.com/photo-1681569685377-dd0dba4b0414?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                              alt=""
+                            />
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/#">
+                            <img
+                              src="https://images.unsplash.com/photo-1585900464046-f713a61424dd?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                              alt=""
+                            />
+                          </Link>
+                        </li>
                       </ul>
                     </div>
                   </div>
