@@ -16,7 +16,10 @@ const settings = {
 export default function About() {
   return (
     <>
-      <Layout breadcrumbTitle="About Us">
+      <Layout
+        breadcrumbTitle="About Us"
+        headerCls={"menu-area-three non-transparent-header"}
+      >
         <section className="about-area inner-about-area pt-120 pb-120">
           <div className="container">
             <div className="row align-items-center">
@@ -28,12 +31,12 @@ export default function About() {
                     className="wow fadeInRight"
                     data-wow-delay=".4s"
                   />
-                  <img
+                  {/* <img
                     src="https://images.unsplash.com/photo-1552960394-c81add8de6b8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt=""
                     className="wow fadeInRight"
                     data-wow-delay=".2s"
-                  />
+                  /> */}
                   <div className="about-experiences-wrap">
                     <div className="experiences-item">
                       <div className="icon">
@@ -113,10 +116,12 @@ export default function About() {
               <div className="col-xl-3 col-md-6">
                 <div className="work-item">
                   <div className="work-thumb">
-                    {/* <img
-                      src="https://images.unsplash.com/photo-1587702068694-a909ef4aa346?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      alt=""
-                    /> */}
+                    {/* <div className="clipped-image">
+                      <img
+                        src="https://images.unsplash.com/photo-1587702068694-a909ef4aa346?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                      />
+                    </div> */}
                     <h4 className="number">01</h4>
                   </div>
                   <div className="work-content">
@@ -602,7 +607,7 @@ export default function About() {
         </div> */}
         {/* area-bg-end */}
         {/* brand-area */}
-        <Brand3 />
+        {/* <Brand3 /> */}
       </Layout>
     </>
   );

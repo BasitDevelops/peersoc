@@ -73,7 +73,7 @@ export default function About2() {
                   approach to protect, detect, and respond to cybersecurity
                   threats.
                 </p>
-                <div className="about-list-two">
+                {/* <div className="about-list-two">
                   <ul className="list-wrap">
                     <li className="list-item">
                       <div className="icon">
@@ -98,7 +98,7 @@ export default function About2() {
                       </div>
                     </li>
                   </ul>
-                </div>
+                </div> */}
                 <Link href="/about" className="btn">
                   Learn More
                 </Link>

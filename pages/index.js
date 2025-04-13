@@ -4,6 +4,7 @@ import AdditionalContent from "@/components/sections/AdditionalContent";
 import Appointment3 from "@/components/sections/Appointment3";
 import Banner3 from "@/components/sections/Banner3";
 import Blog1 from "@/components/sections/Blog1";
+import Brand3 from "@/components/sections/Brand3";
 import Counter4 from "@/components/sections/Counter4";
 import Features3 from "@/components/sections/Features3";
 import Newsletter1 from "@/components/sections/Newsletter1";
@@ -19,6 +20,7 @@ export default function Home4() {
         <Banner3 />
         <Features3 />
         <About2 />
+        <Brand3 />
         <Services1 />
         {/* <div
           className="area-bg-four"
@@ -35,7 +37,8 @@ export default function Home4() {
           <Counter4 />
           <Appointment3 />
         </div> */}
-        <AdditionalContent/>
+        <AdditionalContent />
+        <Brand3 />
         {/* <Support1 /> */}
         <Testimonial3 />
         {/* <Blog1 /> */}
