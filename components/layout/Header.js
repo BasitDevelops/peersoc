@@ -15,13 +15,13 @@ const menuItems = [
   { label: "About Us", href: "/about", hasChildren: false },
   {
     label: "Peersoc",
-    href: "/peersoc",
+    href: "/services/peersoc-XDR",
     hasChildren: true,
     children: [
       {
         icon: <GrTechnology />,
         label: "Peersoc",
-        href: "/peersoc",
+        href: "/services/peersoc-XDR",
         desc: "Seamless, invisible technology enhancing environments without disrupting aesthetics or function",
         links: [
           { label: "Peersoc XDR", href: "/services/peersoc-XDR" },
@@ -42,33 +42,33 @@ const menuItems = [
       {
         icon: <MdOutlineCloud />,
         label: "Peersoc Cloud",
-        href: "/peersoc-cloud",
+        href: "/services/peersoc-cloud",
         desc: "Peersoc Cloud is a secure, scalable platform that simplifies deployment, management, and growth of applications—powered by automation, built-in security, and high-performance infrastructure for modern digital experiences.",
       },
       {
         icon: <LiaIndustrySolid />,
         label: "Peersoc OT",
-        href: "/peersoc-OT",
+        href: "/services/peersoc-OT",
         desc: "Peersoc OT secures industrial systems with real-time visibility, threat detection, and compliance—ensuring safety, reliability, and resilience across operational technology environments in manufacturing, energy, and critical infrastructure.",
       },
     ],
   },
   {
     label: "Services",
-    href: "/services",
+    href: "/services/service",
     hasChildren: true,
     children: [
       {
         id: "S_M_W",
         icon: <GrTechnology />,
         label: "Managed Services",
-        href: "#",
+        href: "/services/managed-services",
       },
       {
         id: "S_M_W_2",
         icon: <GrTechnology />,
         label: "Business Automation & IoT",
-        href: "#",
+        href: "/services/business-automation-iot",
       },
     ],
   },
