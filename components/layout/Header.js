@@ -24,21 +24,21 @@ const menuItems = [
         href: "/peersoc",
         desc: "Seamless, invisible technology enhancing environments without disrupting aesthetics or function",
         links: [
-          { label: "Peersoc XDR", href: "/peersoc-XDR" },
-          { label: "Peersoc XDR+", href: "/peersoc-XDR+" },
-          { label: "Peersoc OXDR", href: "/peersoc-OXDR" },
-          { label: "Peersoc GSOS", href: "/peersoc-GSOS" },
-          { label: "Peersoc MDR", href: "/peersoc-MDR" },
-          { label: "Peersoc MDR+", href: "/peersoc-MDR+" },
-          { label: "Peersoc OMDR", href: "/peersoc-OMDR" },
+          { label: "Peersoc XDR", href: "/services/peersoc-XDR" },
+          { label: "Peersoc XDR+", href: "/services/peersoc-XDR+" },
+          { label: "Peersoc OXDR", href: "/services/peersoc-OXDR" },
+          { label: "Peersoc GSOS", href: "/services/peersoc-GSOS" },
+          { label: "Peersoc MDR", href: "/services/peersoc-MDR" },
+          { label: "Peersoc MDR+", href: "/services/peersoc-MDR+" },
+          { label: "Peersoc OMDR", href: "/services/peersoc-OMDR" },
         ],
       },
-      {
-        icon: <MdOutlineSecurity />,
-        label: "Managed security services on AWS",
-        href: "/managed-security-services-on-AWS",
-        desc: "Managed security services on AWS offer continuous monitoring, threat detection, and compliance using native tools—protecting workloads, ensuring data integrity, and minimizing risks so businesses can focus on growth.",
-      },
+      // {
+      //   icon: <MdOutlineSecurity />,
+      //   label: "Managed security services on AWS",
+      //   href: "/managed-security-services-on-AWS",
+      //   desc: "Managed security services on AWS offer continuous monitoring, threat detection, and compliance using native tools—protecting workloads, ensuring data integrity, and minimizing risks so businesses can focus on growth.",
+      // },
       {
         icon: <MdOutlineCloud />,
         label: "Peersoc Cloud",
@@ -359,9 +359,7 @@ export default function Header({ headerCls, headerTop }) {
                                   </div>
                                   <div className="second-container">
                                     <div key={activeServiceSubMenu?.label}>
-                                      <Link href={activeServiceSubMenu?.href}>
-                                        {activeServiceSubMenu?.label}
-                                      </Link>
+                                      <h1>{activeServiceSubMenu?.label}</h1>
                                       <p>{activeServiceSubMenu?.desc}</p>
                                       <button>
                                         <p>Learn More</p>

@@ -740,7 +740,7 @@ label {
   border-bottom-right-radius: 4px;
 }
 .peersoc-dropdown-menu > div {
-  width: 25%;
+  width: 33%;
   padding: 0.25rem 1.25rem;
 }
 .peersoc-dropdown-menu > div > div {
@@ -860,7 +860,7 @@ label {
   width: 100%;
   padding: 10px 20px;
 }
-.services-dropdown-menu .second-container > div > a {
+.services-dropdown-menu .second-container > div > h1 {
   font-size: 18px;
   font-weight: 700;
   color: var(--slateblack);
@@ -2587,14 +2587,24 @@ label {
 }
 .services-process-img img {
   border-radius: 10px;
+  max-width: 342px;
+  height: 408px;
+  object-fit: cover;
 }
-.services-process-img img:nth-child(2) {
+.services-process-img > div {
   position: absolute;
   right: 0;
   bottom: 0;
+  max-width: 332px;
+  height: 376px;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: white;
+  padding: 0.75rem;
 }
 .services-process-content {
   margin-left: 40px;
+  padding-left: 1rem;
 }
 .services-process-content > .title {
   font-weight: 600;
@@ -2637,10 +2647,11 @@ label {
 .services-details-content .title-two {
   font-weight: 600;
   font-size: 26px;
+  margin-top: 6rem;
   margin-bottom: 20px;
 }
 .service-benefits-wrap {
-  margin-top: 35px;
+  margin: 35px 0 70px;
 }
 .benefits-content .title {
   font-weight: 600;
@@ -2675,6 +2686,9 @@ label {
 }
 .service-benefits-wrap .benefits-img img {
   border-radius: 10px;
+  max-width: 230px;
+  height: 294px;
+  object-fit: cover;
 }
 .services-widget {
   box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.08);
